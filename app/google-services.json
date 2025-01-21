@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "521285103124",
+    "project_id": "priya-2427",
+    "storage_bucket": "priya-2427.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521285103124:android:67c3cdc7f1f90966ff0101",
+        "android_client_info": {
+          "package_name": "com.example.atmsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK7IyI6pfylHoYnL7cR1UhXxVo7YQ5Uto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

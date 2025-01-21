@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.ATMSystem">
+
+        <activity
+            android:name=".Registration"
+            android:exported="false"
+            android:label="Second Activity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".OpenAccount"
+            android:exported="false"
+            android:label="Third Activity"
+            android:parentActivityName=".Registration" />
+
+        <activity
+            android:name=".LoginPage"
+            android:exported="false"
+            android:label="Fourth Activity" />
+
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:label="Fifth Activity" />
+
+        <activity
+            android:name=".WithdrawAmount"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".DepositAmount"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".TransferMoney"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".CheckBalance"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".ShowInfo"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".ChangePIN"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".ForgotPIN"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".LockAccount"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".UnlockAccount"
+            android:exported="false"
+            android:label="Sixth Activity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

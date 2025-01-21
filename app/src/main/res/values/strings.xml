@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ATMSystem</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_to_virtual_atm_system">WELCOME TO VIRTUAL ATM SYSTEM</string>
+    <string name="Login">TODO</string>
+    <string name="deposit_amount">Deposit Amount</string>
+    <string name="security_pin">Security PIN</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="transfer_amount">Transfer Amount</string>
+    <string name="recievers_account_number">Recievers Account Number</string>
+    <string name="receivers_account_number">Receivers Account Number</string>
+    <string name="back_to_home">Back to Home</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.ATMSystem" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colors -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Application theme extending the base theme -->
+    <style name="Theme.ATMSystem" parent="Base.Theme.ATMSystem" />
+</resources>

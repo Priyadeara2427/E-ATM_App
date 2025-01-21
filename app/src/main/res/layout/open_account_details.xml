@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnBackground"
+    android:backgroundTint="#00000000">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/full_name"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Enter Full Name"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/opening_new_account" />
+
+                <TextView
+                    android:id="@+id/initial_amount"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Initial Amount"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+                <EditText
+                    android:id="@+id/enter_initialAmount"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="Minimum sould be Rs. 2000"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/initial_amount"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/security_pin"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Security PIN"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/initial_amount" />
+
+                <EditText
+                    android:id="@+id/enter_securityPIN"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="Must be of 4 digits only."
+                    android:inputType="number"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/security_pin"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/phone_number"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Phone Number"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/security_pin" />
+
+                <EditText
+                    android:id="@+id/enter_phoneNumber"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="Must be 10 digits only"
+                    android:inputType="phone"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/phone_number"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/adhaar_number"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Adhaar Number"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+                <EditText
+                    android:id="@+id/enter_adhaarNumber"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="Must be 12 digits only"
+                    android:inputType="number"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/adhaar_number"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/pan_number"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="PAN Card Number"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/adhaar_number" />
+
+                <EditText
+                    android:id="@+id/enter_panNumber"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+                    android:inputType="text"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/pan_number"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/atm_number"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ATM Card Number"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pan_number" />
+
+                <EditText
+                    android:id="@+id/enter_atmNumber"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/atm_number"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/security_questions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Security Questions"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/enter_atmNumber" />
+
+                <TextView
+                    android:id="@+id/school_name"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="First School Name"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/security_questions" />
+
+                <EditText
+                    android:id="@+id/enter_schoolName"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/school_name"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/pet_name"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Favorite Pet Name"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/school_name" />
+
+                <EditText
+                    android:id="@+id/enter_petName"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/pet_name"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_account_created"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="serif"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/submit_details_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/enter_petName"
+                    app:layout_constraintVertical_bias="0.034" />
+
+                <Button
+                    android:id="@+id/submit_details_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Submit Details"
+                    android:textColor="#0F0E0E"
+                    android:backgroundTint="#858181"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toTopOf="@+id/loginToHome_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/enter_petName" />
+
+                <Button
+                    android:id="@+id/loginToHome_button"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Login"
+                    android:textColor="#0F0E0E"
+                    android:backgroundTint="#858181"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/submit_details_button"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <EditText
+                    android:id="@+id/enter_fullName"
+                    android:layout_width="210dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/full_name"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/opening_new_account"
+                    android:layout_width="343dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Open a New Account"
+                    android:textAlignment="center"
+                    android:textColor="#3DB3E9"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/back_to_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Back to Registration"
+                    android:textColor="#0F0E0E"
+                    android:backgroundTint="#858181"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
