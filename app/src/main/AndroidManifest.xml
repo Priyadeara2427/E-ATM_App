@@ -42,42 +42,47 @@
         <activity
             android:name=".DepositAmount"
             android:exported="false"
-            android:label="Sixth Activity" />
+            android:label="7th Activity" />
 
         <activity
             android:name=".TransferMoney"
             android:exported="false"
-            android:label="Sixth Activity" />
+            android:label="8th Activity" />
 
         <activity
             android:name=".CheckBalance"
             android:exported="false"
-            android:label="Sixth Activity" />
+            android:label="9th Activity" />
 
         <activity
             android:name=".ShowInfo"
             android:exported="false"
-            android:label="Sixth Activity" />
+            android:label="10th Activity" />
 
         <activity
             android:name=".ChangePIN"
             android:exported="false"
-            android:label="Sixth Activity" />
+            android:label="11th Activity" />
 
         <activity
             android:name=".ForgotPIN"
             android:exported="false"
-            android:label="Sixth Activity" />
+            android:label="12th Activity" />
 
         <activity
             android:name=".LockAccount"
             android:exported="false"
-            android:label="Sixth Activity" />
+            android:label="13th Activity" />
 
         <activity
             android:name=".UnlockAccount"
             android:exported="false"
-            android:label="Sixth Activity" />
+            android:label="14th Activity" />
+
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false"
+            android:label="15th Activity" />
 
         <activity
             android:name=".MainActivity"

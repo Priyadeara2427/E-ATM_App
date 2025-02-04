@@ -28,6 +28,8 @@ public class LoginPage extends AppCompatActivity {
     private FirebaseFirestore db;
     private FirebaseAuth auth;
     private TextView register;
+    private TextView forgot_password;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +43,7 @@ public class LoginPage extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         login_response = findViewById(R.id.login_page_response);
         register = findViewById(R.id.not_registered_id);
-
+        forgot_password = findViewById(R.id.forgot_password);
 
         loginButton.setOnClickListener(v -> {
             email = emailText.getText().toString().trim();
@@ -62,6 +64,14 @@ public class LoginPage extends AppCompatActivity {
             Intent intent = new Intent(LoginPage.this, Registration.class);
             startActivity(intent);
         });
+
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                 Intent intent = new Intent(LoginPage.this, ForgotPassword.class);
+                 startActivity(intent);
+            }
+        });
     }
 
     private void authenticateUser(String email, String password) {
@@ -81,6 +91,7 @@ public class LoginPage extends AppCompatActivity {
                         }
                     } else {
                         login_response.setText("Login failed. Check email and password.");
+
                         emailText.setText("");
                         passwordText.setText("");
                         loginButton.setEnabled(true); // Re-enable the button

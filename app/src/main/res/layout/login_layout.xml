@@ -136,7 +136,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:text="Not registered ? Register"
+        android:text="Not yet registered ? Sign Up"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/view13"
@@ -145,5 +145,21 @@
         app:layout_constraintStart_toEndOf="@+id/view10"
         app:layout_constraintTop_toBottomOf="@+id/login_button"
         app:layout_constraintVertical_bias="0.318" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Forgot Password"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/view13"
+        app:layout_constraintEnd_toStartOf="@+id/view9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/view10"
+        app:layout_constraintTop_toBottomOf="@+id/not_registered_id"
+        app:layout_constraintVertical_bias="0.217" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
