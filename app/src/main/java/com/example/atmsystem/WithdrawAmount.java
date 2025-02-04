@@ -100,17 +100,16 @@ public class WithdrawAmount extends AppCompatActivity {
                                 Toast.makeText(WithdrawAmount.this, "Error retrieving account details: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         });
+            }
+        });
 
-
-                return_home.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // Start the home activity
-                        Intent intent = new Intent(WithdrawAmount.this, Home.class);
-                        intent.putExtra("user_email", email);
-                        startActivity(intent);
-                    }
-                });
+        return_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the home activity
+                Intent intent = new Intent(WithdrawAmount.this, Home.class);
+                intent.putExtra("user_email", email);
+                startActivity(intent);
             }
         });
     }
