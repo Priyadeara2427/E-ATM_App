@@ -146,7 +146,7 @@ public class LoginPage extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         // Navigate to Home activity and clear any intermediate stack
-        Intent intent = new Intent(this, Home.class);
+        Intent intent = new Intent(this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish(); // Close the current activity
